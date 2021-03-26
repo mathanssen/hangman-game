@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class MovieWord extends BankOfWords {
 
     // Constructor
-    public MovieWord() {}
+    public MovieWord() {
+    }
 
     // Methods
     // Adds all the words of this category to an array list

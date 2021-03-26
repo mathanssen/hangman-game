@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class CountryWord extends BankOfWords {
 
     // Constructor
-    public CountryWord() {}
+    public CountryWord() {
+    }
 
     // Methods
     // Adds all the words of this category to an array list

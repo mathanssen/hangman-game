@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class Letters {
 
     // Properties
-    private ArrayList<String> missingLetters;  // Letters that have not been chosen yet
-    private ArrayList<String> incorrectLetters = new ArrayList<String>();  // Incorrect letters chosen
+    private ArrayList<String> missingLetters; // Letters that have not been chosen yet
+    private ArrayList<String> incorrectLetters = new ArrayList<String>(); // Incorrect letters chosen
 
     // Constructor
     public Letters() {
@@ -19,7 +19,8 @@ public class Letters {
         this.missingLetters.remove(stringLetter);
     }
 
-    // Generates the alphabet in the beginning of each level, so the player starts from the zero
+    // Generates the alphabet in the beginning of each level, so the player starts
+    // from the zero
     public ArrayList generateAlphabet() {
         ArrayList<String> alphabet = new ArrayList<String>();
         for (char ch = 'A'; ch <= 'Z'; ++ch) {
@@ -29,14 +30,16 @@ public class Letters {
         return alphabet;
     }
 
-    // If the letter is incorrect, adds the letter to the incorrect letter array list
+    // If the letter is incorrect, adds the letter to the incorrect letter array
+    // list
     public void addIncorrectLetter(char letter) {
         String stringLetter = Character.toString(letter);
         stringLetter = stringLetter.toUpperCase();
         this.incorrectLetters.add(stringLetter);
     }
 
-    // In the beginning of each level, all the elements of the incorrect letters array list are removed
+    // In the beginning of each level, all the elements of the incorrect letters
+    // array list are removed
     public void resetIncorrectLetters() {
         this.incorrectLetters.clear();
     }

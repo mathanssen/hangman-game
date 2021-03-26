@@ -5,30 +5,32 @@ import java.util.Scanner;
 public class BankOfWords {
 
     // Properties
-    private String category;  // Category chosen by the player
-    private ArrayList<String> allWords = new ArrayList<String>();  // Array list with all the possible words of the category chosen
-    private ArrayList<String> chosenWords = new ArrayList<String>();  // Array list with all the words that was already randomly chosen
-    private String currentWord;  // Currently word randomly chosen
+    private String category; // Category chosen by the player
+    private ArrayList<String> allWords = new ArrayList<String>(); // Array list with all the possible words of the
+                                                                  // category chosen
+    private ArrayList<String> chosenWords = new ArrayList<String>(); // Array list with all the words that was already
+                                                                     // randomly chosen
+    private String currentWord; // Currently word randomly chosen
     private Player player = new Player();
 
     // Constructor
-    public BankOfWords() {}
+    public BankOfWords() {
+    }
 
     // Methods
     public void addWordToChosenList() {
         this.chosenWords.add(this.currentWord);
     }
 
-
     public void generateNextWord() {
         this.generateCategory();
-        if(this.player.getCategoryChosen() < 6) {
+        if (this.player.getCategoryChosen() < 6) {
             this.generateWordsList();
             this.randomWord(this.allWords);
         }
     }
 
-    //  Stores the category chosen by the player
+    // Stores the category chosen by the player
     public void generateCategory() {
         Scanner scanner = new Scanner(System.in);
         do {
@@ -54,7 +56,7 @@ public class BankOfWords {
             } else {
                 System.out.println("Please, select one of the options");
             }
-        } while(this.player.getOptionChosen() < 1 | this.player.getOptionChosen() > 6);
+        } while (this.player.getOptionChosen() < 1 | this.player.getOptionChosen() > 6);
     }
 
     // Generates an array list of all possible words of the chosen category
@@ -77,7 +79,8 @@ public class BankOfWords {
         }
     }
 
-    // Randomly Chooses a word from the array list created. It checks if the word was already chosen and loop until chooses a new word
+    // Randomly Chooses a word from the array list created. It checks if the word
+    // was already chosen and loop until chooses a new word
     public void randomWord(ArrayList<String> list) {
         Random random = new Random();
         boolean alreadyChosen = false;
@@ -88,12 +91,14 @@ public class BankOfWords {
             } else {
                 alreadyChosen = false;
             }
-        } while(alreadyChosen == true);
+        } while (alreadyChosen == true);
         this.chosenWords.add(this.currentWord);
     }
 
     // Empty method only in the parent class
-    public void addElements(ArrayList<String> list) {;}
+    public void addElements(ArrayList<String> list) {
+        ;
+    }
 
     // Getters and Setters
     public String getCategory() {

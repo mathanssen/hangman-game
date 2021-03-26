@@ -5,13 +5,15 @@ public class Word extends BankOfWords {
     private String dashedWord;
 
     // Constructor
-    public Word() {}
+    public Word() {
+    }
 
     // Methods
-    // Checks if the word does not have dashes anymore. If it doesn't have, so the answer is correct
+    // Checks if the word does not have dashes anymore. If it doesn't have, so the
+    // answer is correct
     public boolean checkAnswer() {
         boolean answer;
-        if(this.word.contentEquals(this.dashedWord)) {
+        if (this.word.contentEquals(this.dashedWord)) {
             answer = true;
             System.out.println("YOU FIGURED OUT!");
         } else {
@@ -46,15 +48,13 @@ public class Word extends BankOfWords {
     // When the user choose a correct word, it converts the dashes to the letters
     public void convertDashesToLetters(char letter) {
         letter = Character.toUpperCase(letter);
-        for(int i = 0; i < this.word.length(); i++) {
-            if(letter == (this.word.charAt(i))) {
-                this.dashedWord = this.dashedWord.substring(0, i)
-                        + letter
-                        + this.dashedWord.substring(i + 1);
+        for (int i = 0; i < this.word.length(); i++) {
+            if (letter == (this.word.charAt(i))) {
+                this.dashedWord = this.dashedWord.substring(0, i) + letter + this.dashedWord.substring(i + 1);
             }
         }
         System.out.println("THE LETTER IS CORRECT!");
-        }
+    }
 
     // Getters and Setters
     public String getWord() {

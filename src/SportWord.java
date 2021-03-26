@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class SportWord extends BankOfWords {
 
     // Constructor
-    public SportWord() {}
+    public SportWord() {
+    }
 
     // Methods
     // Adds all the words of this category to an array list

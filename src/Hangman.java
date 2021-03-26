@@ -1,12 +1,13 @@
 public class Hangman {
 
     // Constructor
-    public Hangman() {}
+    public Hangman() {
+    }
 
     // Methods
     // Depending on the attempts of the player, it shows a different picture
     public void showHangman(int attempts) {
-        if(attempts == 10) {
+        if (attempts == 10) {
             System.out.println("-------------");
             System.out.println("|            ");
             System.out.println("|            ");
@@ -16,7 +17,7 @@ public class Hangman {
             System.out.println("|         ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 9) {
+        } else if (attempts == 9) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|            ");
@@ -26,7 +27,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 8) {
+        } else if (attempts == 8) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");
@@ -36,7 +37,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 7) {
+        } else if (attempts == 7) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");
@@ -46,7 +47,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 6) {
+        } else if (attempts == 6) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");
@@ -56,7 +57,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 5) {
+        } else if (attempts == 5) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");
@@ -66,7 +67,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 4) {
+        } else if (attempts == 4) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");
@@ -76,7 +77,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 3) {
+        } else if (attempts == 3) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");
@@ -86,7 +87,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts == 2) {
+        } else if (attempts == 2) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");
@@ -96,7 +97,7 @@ public class Hangman {
             System.out.println("|            ");
             System.out.println("|");
             System.out.println("-------------");
-        } else if(attempts <= 1) {
+        } else if (attempts <= 1) {
             System.out.println("-------------");
             System.out.println("|        |   ");
             System.out.println("|        o   ");

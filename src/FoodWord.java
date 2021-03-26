@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class FoodWord extends BankOfWords {
 
     // Constructor
-    public FoodWord() {}
+    public FoodWord() {
+    }
 
     // Methods
     // Adds all the words of this category to an array list

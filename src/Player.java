@@ -7,7 +7,8 @@ public class Player {
     private int categoryChosen;
 
     // Constructor
-    public Player() {}
+    public Player() {
+    }
 
     public Player(String name) {
         this.name = name;
